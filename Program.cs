@@ -12,7 +12,7 @@ public class SalesReport : IReport
 
 public class UserReport : IReport
 {
-    public string Generate() => "Отчёт по пользователям: Илья, Мария, Алексей.";
+    public string Generate() => "Отчёт по пользователям: Илья, Катя, Саша.";
 }
 
 public abstract class ReportDecorator : IReport
@@ -120,4 +120,5 @@ class Program
         Console.WriteLine(delivery.GetDeliveryStatus("12345"));
     }
 }
+
 
